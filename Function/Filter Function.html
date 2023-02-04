@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Filter function Using Javascript</h2>
+    <p>Press <kbd>f12</kbd> to open the console and see the output of the program.</p>
+    <script>
+        let arr = [2, 22, 13, 5, 6, 61, 23, 7];
+        // Result[22, 13, 61, 23]
+        let arr1 = arr.filter(function(val) {  //Anonymous Function
+            return val > 10;
+        });
+        console.log(arr1);
+
+        let a = [6, 8, 3, 2, 9, 1, 13, 0];
+        //result [0, 1, 2, 3]
+        let b = a.filter(val => val < 5) // Arrow Function
+        console.log(b);
+
+        //Take Another Example
+
+        let team = [
+            {
+                name: "sonakshi",
+                position: "developer"
+            },{
+                name:"aayushi",
+                position: "web developer"
+            },{
+                name: "charmi",
+                position: "developer"
+            }, {
+                name: "dhruvi",
+                position: "content manager"
+            },
+        ];
+        let developer = team.filter(val => val.position == "developer");
+        console.log(developer);
+    </script>
+</body>
+</html>
