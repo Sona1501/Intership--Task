@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [-5, -2, -6, 0, -1];
+        let largest = numbers[0];
+          for(let i = 1; i < numbers.length; i++) {
+            if(numbers[i] > largest) {
+                largest = numbers[i];
+            }
+          }
+          alert("The largest number is:" , + largest);
+    </script>
+</body>
+</html>

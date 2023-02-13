@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+      CheckSum Using Javascript  
+    </h2>
+    <P>Press <kbd>f12</kbd> to open the console and see the output of the program.</P>
+    <script>
+        function checkForFifty(a, b) {
+            return a === 50 || b === 50 || a + b === 50;
+        }
+        console.log(checkForFifty(25, 30));
+        console.log(checkForFifty(10, 40));
+        console.log(checkForFifty(25, 25));
+        console.log(checkForFifty(15, 35));
+    </script>
+</body>
+</html>
