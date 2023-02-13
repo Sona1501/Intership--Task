@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Javascript Function</h1>
+   <h2>Callback Function</h2>
+   <p>The result of calculation is:</p>
+   
+   <script>
+     function sayHello() {
+        console.log("Hello");
+     }
+
+     function sayHi(){
+        console.log("sayHi..");
+     }
+     function add(num1, num2, callback) {
+        console.log(num1 + num2);
+        callback();
+     }
+     let a = 10;
+     let b = 20;
+
+     add(a, b, sayHello);
+     add(10, 50, sayHi);
+
+     add(10, 20, function(){
+        console.log("bye....."); //Anonymous Function
+
+     });
+
+   </script> 
+</body>
+</html>

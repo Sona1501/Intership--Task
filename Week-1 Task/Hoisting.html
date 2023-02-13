@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Hoisting In Javascript</h2>
+  <p>Press <kbd>f12</kbd> to see the console and see the output of the program.</p>
+
+  <script>
+    //1st way to declare hoisting
+
+   function hello() {
+    console.log("Hello world");
+   }
+   hello(); 
+
+   //2nd way of declare hoisting
+
+   hello();
+   function hello() {
+    console.log("Hello world");
+   } 
+
+   //3rd way of declare hoisting
+
+   var x; //declareation
+
+   x = 8; //assignment
+
+   console.log(x); //call 
+
+   //4th way of declaring hoisting
+
+     var x;
+   console.console.log(x); //undefined
+   x = 8; 
+
+   //5th way of declare hoisting
+
+   x = 8;
+   console.log(x);
+   var x; 
+
+   //6th way declare hoisting
+
+   console.log(x); //undefined
+   var x;
+   x = 8;
+
+   //7th way of declare hoisting
+
+    console.log(x);
+   var x = 8; //undefined 
+
+   //8th way of declare hoisting
+
+   console.log(x);
+   let x;
+   x = 8;   //error
+
+   //using strict mode
+
+   x = 4;
+   console.log(x);  //4
+
+   "use strict"
+   x = 4;
+   console.log(x);
+
+  </script>
+</body>
+</html>

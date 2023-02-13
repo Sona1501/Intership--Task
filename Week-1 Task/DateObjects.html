@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Press <kbd>f12</kbd> to open console and see the output of the program
+    </p>
+    <script>
+       // Date()
+
+       let x = new Date();
+      console.log(x); 
+      
+
+      //Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+       let a = new Date(2023, 1, 8, 10, 15, 20, 10);
+      console.log(x); 
+
+      // Date(dateString)
+
+      let  b = new Date("january 15, 2002, 10:10:10");
+      console.log(x); 
+
+      // Date(milliseconds) get methods
+
+      let c = new Date("january 15, 2002, 11:11:11");
+      console.log(x.getTime());
+      console.log(x.getFullYear());
+      console.log(x.getMonth());
+     console.log(x.getUTCDate());
+    console.log(x.getDay());
+
+    // Set Methods
+    
+    x.setFullYear(2020);
+    x.setMonth(10);
+    x.setHours(10);
+   x.setFullYear(2001);
+   
+   //set and get method combined
+    x.setDate(x.getDate() + 50);
+    console.log(x); 
+    
+    //compare both method
+    let y = new Date("january15, 2002, 11:11:11");
+    y.setDate(x.getDate() + 50);
+    console.log(x);
+    console.log(y);
+
+
+    </script>
+</body>
+</html>
