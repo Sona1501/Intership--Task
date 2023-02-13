@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Reverse Triangle Using Javascript</h2>
+    <p>Press <kbd>f12</kbd> to open console and see the output of the program</p>
+
+    <script>
+        let n = 5; //height of pattern
+        let string = "";
+        //External loop
+        for( let i = 1; i <= n; i++) {
+            for(let j = 1; j <= n - i + 1; j++) {
+                string += n - j + 1;
+            }
+            string += "\n";
+        }
+        console.log(string);
+    </script>
+</body>
+</html>
