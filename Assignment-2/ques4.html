@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function findRepeatingCharacter(str, repeatCount) {
+    let charCount = {};
+    let repeatingCharacter = [];
+    for(let char of str) {
+        if (!charCount[char]) {
+            charCount[char] = 1;
+        }
+        else{
+            charCount[char]++;
+            if(charCount[char] === repeatCount) {
+             repeatingCharacter.push(char);
+            }
+        }
+    }
+    return repeatingCharacter;
+}
+console.log(findRepeatingCharacter("abcddef", 2));
+console.log(findRepeatingCharacter("tfghhhplffzaaa", 3));
+ 
+    </script>
+</body>
+</html>
