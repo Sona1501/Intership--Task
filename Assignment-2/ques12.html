@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function extractQuote(quote) {
+  // Find the index of the hyphen
+  const hyphenIndex = quote.indexOf(" - ");
+
+  // Extract the quote and author from the string using substrings
+  const quoteText = quote.substring(1, hyphenIndex - 1);
+  const author = quote.substring(hyphenIndex + 3);
+
+  // Return the quote and author in an array
+  return [quoteText, author];
+}
+
+const quote = `"The unexamined life is not worth living." - Socrates`;
+console.log(extractQuote(quote)); 
+    </script>
+</body>
+</html>
