@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function findMostCommonCharacter(str) {
+  let charCount = {};
+  let maxCount = 0;
+  let mostCommonChar = '';
+
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (charCount[char]) {
+      charCount[char]++;
+    } 
+    else {
+      charCount[char] = 1;
+    }
+    if (charCount[char] > maxCount || (charCount[char] === maxCount && char < mostCommonChar)) {
+      maxCount = charCount[char];
+      mostCommonChar = char;
+    }
+  }
+
+  return mostCommonChar;
+}
+console.log(findMostCommonCharacter("abcddefg"));
+console.log(findMostCommonCharacter("heggbdeff"));
+    </script>
+</body>
+</htmml>
